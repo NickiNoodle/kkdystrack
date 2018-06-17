@@ -4,4 +4,5 @@ bin/*
 target/*
 .settings/*
 .idea/*
-src/com/dystify/kkdystrack3/core/server/web/application.properties
+.project
+application.properties

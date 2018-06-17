@@ -58,6 +58,9 @@
       <resource>
         <directory>src/com/dystify/kkdystrack3/core/server/web</directory>
       </resource>
+      <resource>
+        <directory>src/com/dystify/kkdystrack3/core/server/resource</directory>
+      </resource>
     </resources>
     <plugins>
       <plugin>
