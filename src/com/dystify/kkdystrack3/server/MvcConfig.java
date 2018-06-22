@@ -1,4 +1,4 @@
-package com.dystify.kkdystrack3.core.server;
+package com.dystify.kkdystrack3.server;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;

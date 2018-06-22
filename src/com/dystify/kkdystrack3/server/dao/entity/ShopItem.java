@@ -1,4 +1,4 @@
-package com.dystify.kkdystrack3.dao.entity;
+package com.dystify.kkdystrack3.server.dao.entity;
 
 import javax.persistence.*;
 

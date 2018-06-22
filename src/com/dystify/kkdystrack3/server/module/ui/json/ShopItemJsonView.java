@@ -1,4 +1,4 @@
-package com.dystify.kkdystrack3.module.ui.json;
+package com.dystify.kkdystrack3.server.module.ui.json;
 
 public class ShopItemJsonView {
   private String name;

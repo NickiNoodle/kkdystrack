@@ -3,4 +3,4 @@
  * @author Duemmer
  *
  */
-package com.dystify.kkdystrack3.core.server;
+package com.dystify.kkdystrack3.server;

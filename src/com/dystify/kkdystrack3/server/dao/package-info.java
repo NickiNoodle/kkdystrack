@@ -4,4 +4,4 @@
  * @author Duemmer
  *
  */
-package com.dystify.kkdystrack3.dao;
+package com.dystify.kkdystrack3.server.dao;

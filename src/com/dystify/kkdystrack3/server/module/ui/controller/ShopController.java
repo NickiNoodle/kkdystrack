@@ -1,8 +1,9 @@
-package com.dystify.kkdystrack3.module.ui.controller;
+package com.dystify.kkdystrack3.server.module.ui.controller;
 
-import com.dystify.kkdystrack3.dao.entity.ShopItem;
-import com.dystify.kkdystrack3.dao.repository.ShopItemRepository;
-import com.dystify.kkdystrack3.module.ui.json.ShopItemJsonView;
+import com.dystify.kkdystrack3.server.dao.entity.ShopItem;
+import com.dystify.kkdystrack3.server.dao.repository.ShopItemRepository;
+import com.dystify.kkdystrack3.server.module.ui.json.ShopItemJsonView;
+
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.DefaultMessageSourceResolvable;

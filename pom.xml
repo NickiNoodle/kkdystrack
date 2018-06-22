@@ -52,6 +52,12 @@
 			<artifactId>json</artifactId>
 			<version>20180130</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org/jaudiotagger -->
+		<dependency>
+			<groupId>org</groupId>
+			<artifactId>jaudiotagger</artifactId>
+			<version>2.0.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -61,16 +67,18 @@
 				<executions>
 					<execution>
 						<id>kkdystrack-server</id>
-						
+
 						<configuration>
 							<archive>
 								<manifest>
 									<mainClass>com.dystify.kkdystrack3.core.server.Application</mainClass>
 								</manifest>
 							</archive>
-							<descriptorRefs>
-								<descriptorRef>jar-with-dependencies</descriptorRef>
-							</descriptorRefs>
+							<!-- <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
+								</descriptorRefs> -->
+							<descriptors>
+								<descriptor>asm/serverAsm.xml</descriptor>
+							</descriptors>
 							<finalName>KKDystrack-Server.jar</finalName>
 						</configuration>
 
@@ -78,28 +86,30 @@
 						<goals>
 							<goal>single</goal>
 						</goals>
-						
+
 					</execution>
 					<execution>
 						<id>kkdystrackd</id>
-						
+
 						<configuration>
 							<archive>
 								<manifest>
 									<mainClass>com.dystify.kkdystrack3.core.client.KKDystrackd</mainClass>
 								</manifest>
 							</archive>
-							<descriptorRefs>
-								<descriptorRef>jar-with-dependencies</descriptorRef>
-							</descriptorRefs>
+							<!-- <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
+								</descriptorRefs> -->
+							<descriptors>
+								<descriptor>asm/serverAsm.xml</descriptor>
+							</descriptors>
 							<finalName>KKDystrackd.jar</finalName>
 						</configuration>
-						
+
 						<phase>package</phase> <!-- bind to the packaging phase -->
 						<goals>
 							<goal>single</goal>
 						</goals>
-						
+
 					</execution>
 				</executions>
 			</plugin>

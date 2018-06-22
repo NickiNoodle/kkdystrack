@@ -1,4 +1,4 @@
-package com.dystify.kkdystrack3.core.client;
+package com.dystify.kkdystrack3.client;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

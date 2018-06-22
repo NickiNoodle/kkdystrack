@@ -5,4 +5,4 @@
  * @author Duemmer
  *
  */
-package com.dystify.kkdystrack3.module;
+package com.dystify.kkdystrack3.server.module;
