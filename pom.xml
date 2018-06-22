@@ -55,39 +55,55 @@
 	</dependencies>
 
 	<build>
-		<plugin>
-			<artifactId>maven-assembly-plugin</artifactId>
-			<executions>
-				<execution>
-					<id>kkdystrack-server</id>
-					<configuration>
-						<archive>
-							<manifest>
-								<mainClass>com.dystify.kkdystrack3.core.server.Application</mainClass>
-							</manifest>
-						</archive>
-						<descriptorRefs>
-							<descriptorRef>jar-with-dependencies</descriptorRef>
-						</descriptorRefs>
-						<finalName>KKDystrack-Server.jar</finalName>
-					</configuration>
-				</execution>
-				<execution>
-					<id>kkdystrack-server</id>
-					<configuration>
-						<archive>
-							<manifest>
-								<mainClass>com.dystify.kkdystrack3.core.client.KKDystrackd</mainClass>
-							</manifest>
-						</archive>
-						<descriptorRefs>
-							<descriptorRef>jar-with-dependencies</descriptorRef>
-						</descriptorRefs>
-						<finalName>KKDystrackd.jar</finalName>
-					</configuration>
-				</execution>
-			</executions>
-		</plugin>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>kkdystrack-server</id>
+						
+						<configuration>
+							<archive>
+								<manifest>
+									<mainClass>com.dystify.kkdystrack3.core.server.Application</mainClass>
+								</manifest>
+							</archive>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<finalName>KKDystrack-Server.jar</finalName>
+						</configuration>
+
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+						
+					</execution>
+					<execution>
+						<id>kkdystrackd</id>
+						
+						<configuration>
+							<archive>
+								<manifest>
+									<mainClass>com.dystify.kkdystrack3.core.client.KKDystrackd</mainClass>
+								</manifest>
+							</archive>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<finalName>KKDystrackd.jar</finalName>
+						</configuration>
+						
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+						
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
 
 
