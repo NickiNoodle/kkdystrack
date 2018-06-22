@@ -71,7 +71,7 @@
 						<configuration>
 							<archive>
 								<manifest>
-									<mainClass>com.dystify.kkdystrack3.core.server.Application</mainClass>
+									<mainClass>com.dystify.kkdystrack3.server.Application</mainClass>
 								</manifest>
 							</archive>
 							<!-- <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
@@ -94,7 +94,7 @@
 						<configuration>
 							<archive>
 								<manifest>
-									<mainClass>com.dystify.kkdystrack3.core.client.KKDystrackd</mainClass>
+									<mainClass>com.dystify.kkdystrack3.client.KKDystrackd</mainClass>
 								</manifest>
 							</archive>
 							<!-- <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 

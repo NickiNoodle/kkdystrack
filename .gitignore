@@ -6,3 +6,4 @@ target/*
 .idea/*
 .project
 application.properties
+*.iml
