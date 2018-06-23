@@ -5,5 +5,5 @@ target/*
 .settings/*
 .idea/*
 .project
-application.properties
 *.iml
+*.properties
