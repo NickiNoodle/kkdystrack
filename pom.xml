@@ -58,58 +58,76 @@
 			<artifactId>jaudiotagger</artifactId>
 			<version>2.0.3</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot</artifactId>
+			<version>2.0.3.RELEASE</version>
+		</dependency>
 	</dependencies>
 
+
+
+
 	<build>
+		<sourceDirectory>src</sourceDirectory>
 		<plugins>
+<!-- 			<plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <mainClass>com.dystify.kkdystrack3.server.Application</mainClass>
+                </configuration>
+                  <executions>
+                    <execution>
+                      <goals>
+                        <goal>repackage</goal>
+                      </goals>
+                    </execution>
+                </executions>
+            </plugin> -->
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.1.0</version>
 				<executions>
 					<execution>
 						<id>kkdystrack-server</id>
-
 						<configuration>
 							<archive>
 								<manifest>
 									<mainClass>com.dystify.kkdystrack3.server.Application</mainClass>
 								</manifest>
 							</archive>
-							<!-- <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
-								</descriptorRefs> -->
 							<descriptors>
 								<descriptor>asm/serverAsm.xml</descriptor>
 							</descriptors>
-							<finalName>KKDystrack-Server.jar</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<finalName>kkdystrack-server</finalName>
 						</configuration>
-
-						<phase>package</phase> <!-- bind to the packaging phase -->
+						<phase>package</phase>
 						<goals>
 							<goal>single</goal>
 						</goals>
-
 					</execution>
 					<execution>
 						<id>kkdystrackd</id>
-
 						<configuration>
 							<archive>
 								<manifest>
 									<mainClass>com.dystify.kkdystrack3.client.KKDystrackd</mainClass>
 								</manifest>
 							</archive>
-							<!-- <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
-								</descriptorRefs> -->
 							<descriptors>
-								<descriptor>asm/serverAsm.xml</descriptor>
+								<descriptor>asm/daemonAsm.xml</descriptor>
 							</descriptors>
-							<finalName>KKDystrackd.jar</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<finalName>kkdystrackd</finalName>
 						</configuration>
-
-						<phase>package</phase> <!-- bind to the packaging phase -->
+						<phase>package</phase>
 						<goals>
 							<goal>single</goal>
 						</goals>
-
 					</execution>
 				</executions>
 			</plugin>
