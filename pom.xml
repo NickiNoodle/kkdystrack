@@ -11,72 +11,36 @@
 	</parent>
 	
 	<dependencies>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-web</artifactId>
-					<version>2.0.3.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-thymeleaf</artifactId>
-					<version>2.0.3.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-				<dependency>
-					<groupId>mysql</groupId>
-					<artifactId>mysql-connector-java</artifactId>
-					<version>8.0.11</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-data-jpa</artifactId>
-					<version>2.0.3.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-jdbc -->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-jdbc</artifactId>
-					<version>2.0.3.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
-				<dependency>
-					<groupId>io.projectreactor</groupId>
-					<artifactId>reactor-core</artifactId>
-					<version>3.1.8.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.json/json -->
-				<dependency>
-					<groupId>org.json</groupId>
-					<artifactId>json</artifactId>
-					<version>20180130</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org/jaudiotagger -->
-				<dependency>
-					<groupId>org</groupId>
-					<artifactId>jaudiotagger</artifactId>
-					<version>2.0.3</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot</artifactId>
-					<version>2.0.3.RELEASE</version>
-				</dependency>
-				<dependency>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-websocket</artifactId>
-					<version>5.0.7.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework/spring-messaging -->
-				<dependency>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-messaging</artifactId>
-					<version>5.0.7.RELEASE</version>
-				</dependency>
-			</dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>2.0.3.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+			<version>3.1.8.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot</artifactId>
+			<version>2.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-websocket</artifactId>
+			<version>5.0.7.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-messaging -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-messaging</artifactId>
+			<version>5.0.7.RELEASE</version>
+		</dependency>
+	</dependencies>
 
 	<profiles>
 		<profile>
@@ -88,12 +52,6 @@
 			</activation>
 
 			<dependencies>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-web</artifactId>
-					<version>2.0.3.RELEASE</version>
-				</dependency>
 				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
 				<dependency>
 					<groupId>org.springframework.boot</groupId>
@@ -118,40 +76,11 @@
 					<artifactId>spring-boot-starter-jdbc</artifactId>
 					<version>2.0.3.RELEASE</version>
 				</dependency>
-				<!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
-				<dependency>
-					<groupId>io.projectreactor</groupId>
-					<artifactId>reactor-core</artifactId>
-					<version>3.1.8.RELEASE</version>
-				</dependency>
 				<!-- https://mvnrepository.com/artifact/org.json/json -->
 				<dependency>
 					<groupId>org.json</groupId>
 					<artifactId>json</artifactId>
 					<version>20180130</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org/jaudiotagger -->
-				<dependency>
-					<groupId>org</groupId>
-					<artifactId>jaudiotagger</artifactId>
-					<version>2.0.3</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot</artifactId>
-					<version>2.0.3.RELEASE</version>
-				</dependency>
-				<dependency>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-websocket</artifactId>
-					<version>5.0.7.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework/spring-messaging -->
-				<dependency>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-messaging</artifactId>
-					<version>5.0.7.RELEASE</version>
 				</dependency>
 			</dependencies>
 
@@ -221,41 +150,11 @@
 			</activation>
 
 			<dependencies>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-web</artifactId>
-					<version>2.0.3.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
-				<dependency>
-					<groupId>io.projectreactor</groupId>
-					<artifactId>reactor-core</artifactId>
-					<version>3.1.8.RELEASE</version>
-				</dependency>
 				<!-- https://mvnrepository.com/artifact/org/jaudiotagger -->
 				<dependency>
 					<groupId>org</groupId>
 					<artifactId>jaudiotagger</artifactId>
 					<version>2.0.3</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot</artifactId>
-					<version>2.0.3.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework/spring-websocket -->
-				<dependency>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-websocket</artifactId>
-					<version>5.0.7.RELEASE</version>
-				</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework/spring-messaging -->
-				<dependency>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-messaging</artifactId>
-					<version>5.0.7.RELEASE</version>
 				</dependency>
 			</dependencies>
 
