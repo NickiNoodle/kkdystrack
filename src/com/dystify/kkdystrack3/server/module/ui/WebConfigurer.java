@@ -5,9 +5,11 @@ import java.net.MalformedURLException;
 
 import javax.annotation.PostConstruct;
 
+import com.dystify.kkdystrack3.server.module.ui.interceptor.LogInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.thymeleaf.spring5.SpringTemplateEngine;
@@ -21,8 +23,7 @@ public class WebConfigurer implements WebMvcConfigurer
 {
   @Autowired
   private SpringTemplateEngine templateEngine;
-  
-  
+
   @PostConstruct
   public void configureTemplateEngine() {
     System.out.println("Configuring Thymeleaf Template location...");
@@ -36,8 +37,6 @@ public class WebConfigurer implements WebMvcConfigurer
     templateEngine.addTemplateResolver(rs);
   }
   
-  
-  
   @Override
   public void addResourceHandlers(ResourceHandlerRegistry registry) {
     try {
@@ -47,5 +46,11 @@ public class WebConfigurer implements WebMvcConfigurer
     } catch (MalformedURLException e) {
       e.printStackTrace();
     }
+  }
+
+  @Override
+  public void addInterceptors(InterceptorRegistry registry) {
+    System.out.println("Adding interceptors...");
+    registry.addInterceptor(new LogInterceptor());
   }
 }

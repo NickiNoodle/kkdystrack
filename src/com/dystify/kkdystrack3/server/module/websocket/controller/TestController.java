@@ -7,10 +7,9 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class TestController {
-
-    @MessageMapping("/data")
-    @SendTo("/socket/newitem")
-    public TestPojo test(TestPojo test) throws Exception {
-        return new TestPojo(test.getContent());
-    }
+  @MessageMapping("/data")
+  @SendTo("/socket/newitem")
+  public TestPojo test(TestPojo test) throws Exception {
+    return new TestPojo(test.getContent());
   }
+}

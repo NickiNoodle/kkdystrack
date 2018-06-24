@@ -5,8 +5,9 @@ $(document).ready(() => {
   let init = () => {
     let url = 'ws://127.0.0.1:8000/data';
     client = Stomp.client(url);
+    // Disable debug logging.
+    client.debug = function(str) {};
     client.connect({}, (frame) => {
-      console.log('Connected ' + frame);
       client.subscribe('/socket/newitem', (greeting) => {
         console.log(JSON.parse(greeting.body).content);
       });

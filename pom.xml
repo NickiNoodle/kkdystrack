@@ -89,9 +89,6 @@
 					<resource>
 						<directory>src/com/dystify/kkdystrack3/server/resource</directory>
 					</resource>
-					<resource>
-						<directory>src/com/dystify/kkdystrack3/server/web</directory>
-					</resource>
 				</resources>
 				<plugins>
 					<plugin>
@@ -112,7 +109,7 @@
 									<goal>repackage</goal>
 								</goals>
 								<configuration>
-									<mainClass>com.dystify.kkdystrack3.server.Application</mainClass>
+									<mainClass>com.dystify.kkdystrack3.server.KKDystrackServer</mainClass>
 									<finalName>server</finalName>
 								</configuration>
 							</execution>
