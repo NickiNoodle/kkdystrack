@@ -17,4 +17,9 @@ public class TestPojo {
   public void setContent(String content) {
     this.content = content;
   }
+
+  @Override
+  public String toString() {
+    return "TestPojo {content: " + this.getContent() + "}";
+  }
 }

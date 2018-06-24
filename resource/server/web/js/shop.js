@@ -3,7 +3,7 @@ $(document).ready(() => {
   let client = null;
 
   let init = () => {
-    let url = 'ws://127.0.0.1:8000/data';
+    const url = 'wss://127.0.0.1:8000/data';
     client = Stomp.client(url);
     // Disable debug logging.
     client.debug = function(str) {};

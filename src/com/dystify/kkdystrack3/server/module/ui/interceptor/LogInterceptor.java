@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.logging.Logger;
 
 public class LogInterceptor extends HandlerInterceptorAdapter {
-  private static final Logger LOG = Logger.getLogger( LogInterceptor.class.getName());
+  private static final Logger LOG = Logger.getLogger(LogInterceptor.class.getName());
 
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
