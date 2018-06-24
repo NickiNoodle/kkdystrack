@@ -48,6 +48,6 @@ public class ShopController {
   public String shop(Model model) {
     List<ShopItem> list = this.shopItemRepository.findAll();
     model.addAttribute("list", list);
-    return "shop";
+    return "/shop";
   }
 }
