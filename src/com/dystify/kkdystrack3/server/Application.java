@@ -18,6 +18,7 @@ import com.dystify.kkdystrack3.server.module.ui.UiModuleConfiguration;
 public class Application {
 
   public static void main(String[] args) {
+    System.out.println("Hello debug!");
     SpringApplication.run(Application.class, args);
   }
 
