@@ -29,8 +29,14 @@
 		</file>
 		<file>
 			<outputDirectory>.</outputDirectory>
-			<source>resource/server/launch.bat</source>
+			<source>resource/common/launch.bat</source>
 			<destName>launch.bat</destName>
+			<filtered>false</filtered>
+		</file>
+		<file>
+			<outputDirectory>.</outputDirectory>
+			<source>resource/common/launch.jar</source>
+			<destName>launch.jar</destName>
 			<filtered>false</filtered>
 		</file>
 	</files>

@@ -6,4 +6,4 @@ target/*
 .idea/*
 .project
 *.iml
-*.properties
+db.properties
