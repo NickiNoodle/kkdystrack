@@ -5,7 +5,6 @@
 	<id>client-dyst</id>
 	<formats>
 		<format>zip</format>
-		<format>tar.gz</format>
 	</formats>
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
@@ -29,8 +28,14 @@
 		</file>
 		<file>
 			<outputDirectory>.</outputDirectory>
-			<source>resource/client/launch.bat</source>
+			<source>resource/common/launch.bat</source>
 			<destName>launch.bat</destName>
+			<filtered>false</filtered>
+		</file>
+		<file>
+			<outputDirectory>.</outputDirectory>
+			<source>resource/common/launch.jar</source>
+			<destName>launch.jar</destName>
 			<filtered>false</filtered>
 		</file>
 	</files>
