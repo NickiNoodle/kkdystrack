@@ -87,10 +87,7 @@
 			<build>
 				<resources>
 					<resource>
-						<directory>src/com/dystify/kkdystrack3/server/resource</directory>
-					</resource>
-					<resource>
-						<directory>src/com/dystify/kkdystrack3/server/web</directory>
+						<directory>${pom.basedir}/resource/server</directory>
 					</resource>
 				</resources>
 				<plugins>
@@ -161,7 +158,7 @@
 			<build>
 				<resources>
 					<resource>
-						<directory>src/com/dystify/kkdystrack3/client/resource</directory>
+						<directory>${pom.basedir}/resource/client</directory>
 					</resource>
 				</resources>
 				<plugins>
