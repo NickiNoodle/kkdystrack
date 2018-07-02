@@ -5,4 +5,7 @@ target/*
 .settings/*
 .idea/*
 .project
-application.properties
+*.iml
+*.p12
+db.properties
+ssl.properties

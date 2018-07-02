@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script th:src="@{js/external/stomp.min.js}"></script>
+    <script th:src="@{js/shop.js}"></script>
+  </head>
+  <body>
+    <p>Here's what's in the shop!</p>
+    <table>
+      <tr>
+        <th>Name</th>
+      </tr>
+      <tr th:each="item : ${list}">
+        <td th:text="${item.getItemName()}"></td>
+      </tr>
+    </table>
+    <input type="text" class="name"><input type="button" class="addItem" value="Add Item!">
+  </body>
+</html>
